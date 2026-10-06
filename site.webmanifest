@@ -1,0 +1,9 @@
+{
+  "name":"Maan Win",
+  "short_name":"Maan Win",
+  "start_url":"/",
+  "display":"standalone",
+  "background_color":"#06101d",
+  "theme_color":"#06101d",
+  "description":"Maan Win game portal landing page."
+}

@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Maan Win Game - Game Portal</title>
+
+<meta name="description"
+content="Maan Win Game - explore the game portal, features, account information and frequently asked questions.">
+
+<meta name="robots" content="index,follow">
+
+<link rel="canonical" href="https://maanwin.game/">
+
+<style>
+:root{
+  --navy:#0f1630;
+  --navy2:#1b2347;
+  --orange:#ff7a00;
+  --orange2:#c85a00;
+  --cream:#fff8f1;
+  --ink:#1d2033;
+  --muted:#5b607a;
+  --white:#fff;
+
+  --grad:linear-gradient(
+    100deg,
+    var(--navy) 0%,
+    #4a2a10 55%,
+    var(--orange) 100%
+  );
+}
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:"Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif;
+  background:var(--cream);
+  color:var(--ink);
+  line-height:1.65;
+}
+
+a{
+  color:var(--orange);
+  text-decoration:none;
+}
+
+a:focus-visible{
+  outline:3px solid var(--orange);
+  outline-offset:3px;
+}
+
+/* HEADER */
+
+header{
+  background:var(--navy);
+  border-bottom:2px solid var(--orange);
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+
+.nav{
+  max-width:1100px;
+  margin:auto;
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  padding:14px 20px;
+  gap:16px;
+  flex-wrap:wrap;
+}
+
+.logo{
+  font-size:1.5rem;
+  font-weight:800;
+  color:#fff;
+  letter-spacing:-.5px;
+}
+
+.logo span{
+  color:var(--orange);
+}
+
+nav ul{
+  list-style:none;
+  display:flex;
+  gap:22px;
+  flex-wrap:wrap;
+}
+
+nav a{
+  color:#e6e8f5;
+  font-weight:600;
+  font-size:.95rem;
+  padding:6px 0;
+  border-bottom:2px solid transparent;
+}
+
+nav a:hover{
+  border-color:var(--orange);
+}
+
+/* MAIN */
+
+main{
+  max-width:1000px;
+  margin:28px auto;
+  background:#fff;
+  padding:36px 32px;
+  border-radius:14px;
+  box-shadow:0 10px 40px rgba(15,22,48,.08);
+}
+
+h1{
+  font-size:clamp(2rem,5vw,2.8rem);
+  line-height:1.15;
+  margin-bottom:16px;
+}
+
+.lead{
+  color:var(--muted);
+  font-size:1.05rem;
+  margin-bottom:12px;
+}
+
+/* SECTION BAR */
+
+.band{
+  background:var(--grad);
+  color:#fff;
+  text-align:center;
+  font-size:1.4rem;
+  font-weight:700;
+  padding:16px 20px;
+  border-radius:14px;
+  border-left:6px solid var(--orange);
+  margin:36px 0 22px;
+}
+
+/* HERO */
+
+.hero-card{
+  text-align:center;
+  margin:24px 0;
+}
+
+.logo-box{
+  width:170px;
+  height:170px;
+  margin:0 auto 22px;
+
+  border-radius:36px;
+
+  background:
+    radial-gradient(
+      circle at 30% 25%,
+      #3b5bff,
+      #10206e 70%
+    );
+
+  border:3px solid var(--orange);
+
+  display:grid;
+  place-items:center;
+
+  box-shadow:
+    0 14px 34px rgba(255,122,0,.3);
+}
+
+.logo-box b{
+  font-size:2rem;
+  color:#fff;
+}
+
+.logo-box b span{
+  color:#ffb347;
+}
+
+/* BUTTONS */
+
+.buttons{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+
+  min-width:145px;
+  min-height:48px;
+
+  background:var(--orange);
+  color:var(--navy);
+
+  font-weight:800;
+  font-size:1.05rem;
+
+  padding:12px 30px;
+
+  border-radius:999px;
+  border:none;
+
+  cursor:pointer;
+
+  box-shadow:
+    0 8px 22px rgba(255,122,0,.35);
+
+  transition:
+    transform .15s ease,
+    background .15s ease;
+}
+
+.btn:hover{
+  transform:translateY(-2px);
+  background:#ff8f26;
+}
+
+.btn.ghost{
+  background:transparent;
+  color:var(--orange);
+  border:2px solid var(--orange);
+  box-shadow:none;
+}
+
+.btn.ghost:hover{
+  background:#fff3e6;
+}
+
+/* TABLE */
+
+.tablewrap{
+  overflow-x:auto;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  border-radius:12px;
+  overflow:hidden;
+  margin:26px 0;
+}
+
+th{
+  background:var(--grad);
+  color:#fff;
+  padding:14px;
+  text-align:center;
+}
+
+td{
+  padding:14px;
+  text-align:center;
+  border-bottom:1px solid #f0e3d4;
+}
+
+tr:nth-child(odd) td{
+  background:#fff3e6;
+}
+
+td strong{
+  color:var(--ink);
+}
+
+/* HEADINGS */
+
+h2{
+  font-size:1.4rem;
+  color:var(--orange2);
+
+  border-left:5px solid var(--orange);
+
+  background:
+    linear-gradient(
+      90deg,
+      #fff1e2,
+      #fff
+    );
+
+  padding:14px 18px;
+  border-radius:10px;
+
+  margin:34px 0 16px;
+}
+
+/* LIST */
+
+ul.steps{
+  padding-left:24px;
+  margin-bottom:10px;
+}
+
+ul.steps li{
+  margin:8px 0;
+}
+
+/* CARDS */
+
+.grid{
+  display:grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fit,
+      minmax(200px,1fr)
+    );
+
+  gap:16px;
+  margin:18px 0;
+}
+
+.card{
+  background:var(--navy);
+  color:#fff;
+
+  border-radius:14px;
+
+  padding:22px 18px;
+
+  border-top:4px solid var(--orange);
+}
+
+.card h3{
+  color:var(--orange);
+  margin-bottom:6px;
+}
+
+.card p{
+  color:#cfd3ea;
+  font-size:.95rem;
+}
+
+/* FAQ */
+
+details{
+  border:1px solid #f0d9c0;
+  border-radius:10px;
+
+  padding:14px 18px;
+  margin:10px 0;
+
+  background:#fffaf4;
+}
+
+summary{
+  cursor:pointer;
+  font-weight:700;
+}
+
+details p{
+  margin-top:10px;
+  color:var(--muted);
+}
+
+/* FOOTER */
+
+footer{
+  background:var(--navy);
+  color:#b9bdd6;
+
+  text-align:center;
+
+  padding:28px 20px;
+
+  border-top:2px solid var(--orange);
+
+  font-size:.9rem;
+}
+
+footer a{
+  color:#fff;
+  margin:0 10px;
+}
+
+/* NOTE */
+
+.note{
+  background:#fff3e6;
+
+  border:1px dashed var(--orange);
+
+  border-radius:10px;
+
+  padding:12px 16px;
+
+  font-size:.9rem;
+
+  color:var(--muted);
+
+  margin-top:14px;
+}
+
+/* MOBILE */
+
+@media(max-width:640px){
+
+  main{
+    margin:14px;
+    padding:22px 16px;
+  }
+
+  .nav{
+    justify-content:center;
+  }
+
+  .logo{
+    width:100%;
+    text-align:center;
+  }
+
+  nav ul{
+    gap:14px;
+    justify-content:center;
+  }
+
+  .buttons{
+    flex-direction:column;
+  }
+
+  .btn{
+    width:100%;
+    max-width:320px;
+  }
+}
+
+/* REDUCED MOTION */
+
+@media(prefers-reduced-motion:reduce){
+
+  *{
+    transition:none!important;
+  }
+
+  html{
+    scroll-behavior:auto!important;
+  }
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+<div class="nav">
+
+<div class="logo">
+Maan<span>Win</span>
+</div>
+
+<nav aria-label="Main navigation">
+
+<ul>
+
+<li>
+<a href="#top">Home</a>
+</li>
+
+<li>
+<a href="#features">Features</a>
+</li>
+
+<li>
+<a href="#guide">Guide</a>
+</li>
+
+<li>
+<a href="#faq">FAQ</a>
+</li>
+
+<li>
+<a href="#contact">Contact</a>
+</li>
+
+</ul>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- MAIN -->
+
+<main id="top">
+
+<h1>
+Maan Win Game - Game Portal Guide
+</h1>
+
+<p class="lead">
+Maan Win is an online game portal with a
+responsive interface designed for mobile
+and desktop users.
+</p>
+
+<p class="lead">
+This guide provides information about the
+platform, available features, account access
+and frequently asked questions.
+</p>
+
+
+<!-- HERO -->
+
+<div class="band">
+Maan Win Game
+</div>
+
+
+<div class="hero-card">
+
+<div
+class="logo-box"
+role="img"
+aria-label="Maan Win logo"
+>
+
+<div>
+
+<b>
+maan<span>.win</span>
+</b>
+
+</div>
+
+</div>
+
+
+<!-- LOGIN + REGISTER -->
+
+<div class="buttons">
+
+<a
+class="btn"
+href="https://maanwin28.com/register?inviteCode=KZHQUVN&from=web"
+>
+LOGIN
+</a>
+
+<a
+class="btn ghost"
+href="https://maanwin28.com/register?inviteCode=KZHQUVN&from=web"
+>
+REGISTER
+</a>
+
+</div>
+
+</div>
+
+
+<!-- INFORMATION TABLE -->
+
+<div class="tablewrap">
+
+<table>
+
+<tr>
+<th>Feature</th>
+<th>Details</th>
+</tr>
+
+<tr>
+<td>Platform Name</td>
+<td>Maan Win</td>
+</tr>
+
+<tr>
+<td>Platform Type</td>
+<td>
+<strong>Online Game Portal</strong>
+</td>
+</tr>
+
+<tr>
+<td>Access</td>
+<td>
+Mobile &amp; Desktop Browser
+</td>
+</tr>
+
+<tr>
+<td>Interface</td>
+<td>
+Responsive Web Design
+</td>
+</tr>
+
+<tr>
+<td>Account Access</td>
+<td>
+Login / Registration
+</td>
+</tr>
+
+</table>
+
+</div>
+
+
+<!-- FEATURES -->
+
+<div
+class="band"
+id="features"
+>
+Key Features
+</div>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>
+Game Categories
+</h3>
+
+<p>
+Explore the categories and games
+available through the platform.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+Mobile Friendly
+</h3>
+
+<p>
+The responsive interface adapts
+to phones, tablets and desktops.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+Simple Navigation
+</h3>
+
+<p>
+Clear navigation makes it easy
+to find important information.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+Account Access
+</h3>
+
+<p>
+Use the available account area
+to access your profile.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- GUIDE -->
+
+<div
+class="band"
+id="guide"
+>
+How to Use Maan Win
+</div>
+
+<ul class="steps">
+
+<li>
+Open the Maan Win website
+in your browser.
+</li>
+
+<li>
+Review the available platform
+information and sections.
+</li>
+
+<li>
+Use the Login option if you
+already have an account.
+</li>
+
+<li>
+Use the Register option if
+you need to create an account.
+</li>
+
+<li>
+Review the applicable terms
+before using any platform feature.
+</li>
+
+</ul>
+
+
+<h2>
+Steps to Login
+</h2>
+
+<ul class="steps">
+
+<li>
+Open the Maan Win website.
+</li>
+
+<li>
+Click the <strong>Login</strong>
+button.
+</li>
+
+<li>
+Enter your registered
+account details.
+</li>
+
+<li>
+Complete any verification
+requested by the platform.
+</li>
+
+<li>
+Continue to your account.
+</li>
+
+</ul>
+
+
+<h2>
+Account Registration
+</h2>
+
+<ul class="steps">
+
+<li>
+Click the <strong>Register</strong>
+button.
+</li>
+
+<li>
+Enter the information requested
+by the registration page.
+</li>
+
+<li>
+Create your account credentials.
+</li>
+
+<li>
+Complete any required
+verification.
+</li>
+
+<li>
+Review and accept the applicable
+terms before completing registration.
+</li>
+
+</ul>
+
+
+<!-- CATEGORIES -->
+
+<div class="band">
+Game Categories
+</div>
+
+<div class="grid">
+
+<div class="card">
+<h3>Wingo</h3>
+<p>
+Category information can be
+provided here.
+</p>
+</div>
+
+<div class="card">
+<h3>K3</h3>
+<p>
+Category information can be
+provided here.
+</p>
+</div>
+
+<div class="card">
+<h3>5D</h3>
+<p>
+Category information can be
+provided here.
+</p>
+</div>
+
+<div class="card">
+<h3>Aviator</h3>
+<p>
+Category information can be
+provided here.
+</p>
+</div>
+
+</div>
+
+
+<!-- FAQ -->
+
+<div
+class="band"
+id="faq"
+>
+Frequently Asked Questions
+</div>
+
+
+<details>
+
+<summary>
+What is Maan Win?
+</summary>
+
+<p>
+Maan Win is presented on this
+page as an online game portal.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Can I access the website on mobile?
+</summary>
+
+<p>
+Yes. The page is responsive and
+adapts to mobile, tablet and
+desktop screens.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+How do I access my account?
+</summary>
+
+<p>
+Use the Login option provided
+on the website.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+How can I create an account?
+</summary>
+
+<p>
+Use the Register option and
+follow the instructions shown
+on the registration page.
+</p>
+
+</details>
+
+
+<p class="note">
+Always review the current platform
+terms, conditions and applicable
+rules before using any available
+feature.
+</p>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer id="contact">
+
+<p>
+
+<a href="#">
+About Us
+</a>
+
+<a href="#">
+Contact Us
+</a>
+
+<a href="#">
+Privacy Policy
+</a>
+
+<a href="#">
+Terms
+</a>
+
+</p>
+
+<p style="margin-top:10px">
+© 2026 Maan Win.
+All rights reserved.
+</p>
+
+</footer>
+
+</body>
+</html>
