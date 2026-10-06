@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   <meta charset="UTF-8">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
-  <meta name="google-site-verification" content="Bif1k89rd4eAnVJC6yXg4bGrh8tQJzAlJFHs2QFpZ7s">
+  <meta
+    name="google-site-verification"
+    content="Bif1k89rd4eAnVJC6yXg4bGrh8tQJzAlJFHs2QFpZ7s"
+  >
 
   <meta name="theme-color" content="#11172f">
 
-  <title>Maan Win Game - Complete Game Portal</title>
+  <title>Maan Gaming Hub - Online Gaming Portal</title>
 
   <meta
     name="description"
-    content="Explore Maan Win Game information, features, account access, game categories and frequently asked questions."
+    content="Explore Maan Gaming Hub, discover game categories, features, account information and helpful gaming guides."
   >
 
   <meta
@@ -22,20 +27,17 @@
     content="index, follow, max-image-preview:large"
   >
 
-  <!-- CHANGE THIS TO YOUR REAL DOMAIN -->
   <link
     rel="canonical"
     href="https://maanwin.game/"
   >
 
-  <!-- Favicon -->
   <link
     rel="icon"
     type="image/png"
     href="maan-win-logo.png"
   >
 
-  <!-- Preload logo -->
   <link
     rel="preload"
     as="image"
@@ -43,19 +45,16 @@
     fetchpriority="high"
   >
 
-  <meta
-    property="og:type"
-    content="website"
-  >
+  <meta property="og:type" content="website">
 
   <meta
     property="og:title"
-    content="Maan Win Game - Complete Game Portal"
+    content="Maan Gaming Hub - Online Gaming Portal"
   >
 
   <meta
     property="og:description"
-    content="Explore Maan Win Game information, features, account access and game categories."
+    content="Explore games, features, guides and account information at Maan Gaming Hub."
   >
 
   <meta
@@ -65,9 +64,9 @@
 
   <style>
 
-    /* ==================================================
+    /* ================================
        RESET
-    ================================================== */
+    ================================= */
 
     *,
     *::before,
@@ -82,17 +81,10 @@
     body {
       margin: 0;
       padding: 0;
-
       background: #f7f4ee;
       color: #202020;
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+      font-family: Arial, Helvetica, sans-serif;
       line-height: 1.7;
-
       overflow-x: hidden;
     }
 
@@ -106,123 +98,81 @@
       color: inherit;
     }
 
-
-    /* ==================================================
-       COLORS
-    ================================================== */
-
     :root {
       --navy: #11172f;
       --navy-2: #1c2547;
-
       --orange: #ff7900;
       --orange-2: #ff9a20;
-
       --cream: #f7f4ee;
       --white: #ffffff;
-
       --text: #202020;
       --muted: #666666;
-
       --border: #e5e0d8;
-
-      --shadow:
-        0 10px 30px rgba(15, 22, 48, 0.09);
+      --shadow: 0 10px 30px rgba(15, 22, 48, 0.09);
     }
 
-
-    /* ==================================================
-       MAIN WIDTH / CENTERING
-    ================================================== */
+    /* ================================
+       CONTAINERS
+    ================================= */
 
     .container {
       width: min(1060px, calc(100% - 32px));
-
       margin-left: auto !important;
       margin-right: auto !important;
     }
 
     .section {
       width: min(1060px, calc(100% - 32px));
-
       margin-left: auto !important;
       margin-right: auto !important;
-
       margin-top: 46px;
       margin-bottom: 46px;
     }
 
-
-    /* ==================================================
+    /* ================================
        HEADER
-    ================================================== */
+    ================================= */
 
     .site-header {
       position: sticky;
       top: 0;
-
       z-index: 999;
-
       background: var(--navy);
-
       border-bottom: 3px solid var(--orange);
-
-      box-shadow:
-        0 5px 20px rgba(0, 0, 0, 0.18);
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.18);
     }
 
     .header-inner {
       width: min(1180px, calc(100% - 32px));
-
       min-height: 74px;
-
       margin-left: auto;
       margin-right: auto;
-
       display: flex;
-
       align-items: center;
-
       justify-content: space-between;
-
       gap: 25px;
     }
 
-
-    /* ==================================================
-       LOGO / BRAND
-    ================================================== */
-
     .brand {
       display: flex;
-
       align-items: center;
-
       gap: 11px;
-
       text-decoration: none;
-
       flex-shrink: 0;
     }
 
     .brand img {
       width: 48px;
       height: 48px;
-
       border-radius: 10px;
-
       object-fit: cover;
-
       background: #ffffff;
     }
 
     .brand-text {
       color: #ffffff;
-
       font-size: 21px;
-
       font-weight: 800;
-
       letter-spacing: -0.4px;
     }
 
@@ -230,63 +180,45 @@
       color: var(--orange);
     }
 
-
-    /* ==================================================
+    /* ================================
        NAVIGATION
-    ================================================== */
+    ================================= */
 
     .nav {
       display: flex;
-
       align-items: center;
-
       justify-content: center;
-
       gap: 23px;
     }
 
     .nav a {
       color: #ffffff;
-
       text-decoration: none;
-
       font-size: 14px;
-
       font-weight: 700;
-
-      transition:
-        color 0.2s ease,
-        opacity 0.2s ease;
+      transition: color 0.2s ease;
     }
 
     .nav a:hover {
       color: var(--orange-2);
     }
 
-
-    /* ==================================================
+    /* ================================
        HERO
-    ================================================== */
+    ================================= */
 
     .hero {
       text-align: center;
-
       padding-top: 58px;
       padding-bottom: 45px;
     }
 
     .hero h1 {
       max-width: 900px;
-
       margin: 0 auto 16px;
-
       color: var(--navy);
-
-      font-size:
-        clamp(34px, 5vw, 58px);
-
+      font-size: clamp(34px, 5vw, 58px);
       line-height: 1.12;
-
       letter-spacing: -1.6px;
     }
 
@@ -296,144 +228,92 @@
 
     .hero-description {
       width: min(820px, 100%);
-
       margin: 0 auto 25px;
-
       color: #555555;
-
       font-size: 17px;
     }
-
-
-    /* ==================================================
-       MAIN LOGO
-    ================================================== */
 
     .hero-logo {
       width: 180px;
       height: 180px;
-
       margin: 30px auto 28px;
-
       object-fit: cover;
-
       border-radius: 30px;
-
       border: 5px solid var(--orange);
-
       background: #ffffff;
-
-      box-shadow:
-        0 15px 45px rgba(15, 22, 48, 0.20);
+      box-shadow: 0 15px 45px rgba(15, 22, 48, 0.20);
     }
 
-
-    /* ==================================================
+    /* ================================
        BUTTONS
-    ================================================== */
+    ================================= */
 
     .buttons {
       width: 100%;
-
       display: flex;
-
       justify-content: center;
-
       align-items: center;
-
       gap: 14px;
-
       flex-wrap: wrap;
-
       margin-top: 24px;
     }
 
     .btn {
       min-width: 155px;
-
       min-height: 50px;
-
       padding: 12px 25px;
-
       display: inline-flex;
-
       align-items: center;
-
       justify-content: center;
-
       border-radius: 9px;
-
       border: 2px solid var(--orange);
-
-      background:
-        linear-gradient(
-          135deg,
-          var(--orange),
-          var(--orange-2)
-        );
-
+      background: linear-gradient(
+        135deg,
+        var(--orange),
+        var(--orange-2)
+      );
       color: #ffffff;
-
       text-decoration: none;
-
       font-size: 15px;
-
       font-weight: 800;
-
       letter-spacing: 0.4px;
-
-      box-shadow:
-        0 7px 18px rgba(255, 121, 0, 0.22);
-
+      box-shadow: 0 7px 18px rgba(255, 121, 0, 0.22);
       transition:
         transform 0.2s ease,
-        box-shadow 0.2s ease,
-        background 0.2s ease;
+        box-shadow 0.2s ease;
     }
 
     .btn:hover {
       transform: translateY(-2px);
-
-      box-shadow:
-        0 10px 25px rgba(255, 121, 0, 0.30);
+      box-shadow: 0 10px 25px rgba(255, 121, 0, 0.30);
     }
 
     .btn.ghost {
       background: transparent;
-
       color: var(--orange);
-
       box-shadow: none;
     }
 
     .btn.ghost:hover {
       background: var(--orange);
-
       color: #ffffff;
     }
 
-
-    /* ==================================================
-       INTRO BOX
-    ================================================== */
+    /* ================================
+       INTRO
+    ================================= */
 
     .intro {
       width: 100%;
-
       padding: 30px;
-
       background: #ffffff;
-
       border: 1px solid var(--border);
-
       border-radius: 14px;
-
       box-shadow: var(--shadow);
     }
 
     .intro p {
       margin-top: 0;
-
       margin-bottom: 16px;
     }
 
@@ -441,106 +321,75 @@
       margin-bottom: 0;
     }
 
-
-    /* ==================================================
+    /* ================================
        SECTION TITLE
-    ================================================== */
+    ================================= */
 
     .section-title {
       width: 100%;
-
       margin: 0 0 22px;
-
       padding: 15px 20px;
-
       border-radius: 8px;
-
-      background:
-        linear-gradient(
-          100deg,
-          var(--navy) 0%,
-          #3d2b1b 55%,
-          var(--orange) 100%
-        );
-
+      background: linear-gradient(
+        100deg,
+        var(--navy) 0%,
+        #3d2b1b 55%,
+        var(--orange) 100%
+      );
       color: #ffffff;
-
       font-size: 25px;
-
       line-height: 1.3;
-
-      box-shadow:
-        0 7px 20px rgba(15, 22, 48, 0.11);
+      box-shadow: 0 7px 20px rgba(15, 22, 48, 0.11);
     }
 
     .section > p {
       color: #454545;
     }
 
-
-    /* ==================================================
+    /* ================================
        NOTICE
-    ================================================== */
+    ================================= */
 
     .notice {
       width: 100%;
-
       margin-top: 22px;
-
       padding: 18px 20px;
-
       background: #fff8ef;
-
       border-left: 5px solid var(--orange);
-
       border-radius: 8px;
-
       color: #555555;
     }
 
-
-    /* ==================================================
+    /* ================================
        INFORMATION TABLE
-    ================================================== */
+    ================================= */
 
     .table-wrapper {
       width: 100%;
-
       overflow-x: auto;
-
       background: #ffffff;
-
       border: 1px solid var(--border);
-
       border-radius: 13px;
-
       box-shadow: var(--shadow);
     }
 
     .info-table {
       width: 100%;
-
       min-width: 620px;
-
       border-collapse: collapse;
     }
 
     .info-table th,
     .info-table td {
       padding: 15px 17px;
-
       text-align: left;
-
       border-bottom: 1px solid var(--border);
     }
 
     .info-table th {
       width: 32%;
-
       background: #fff8f0;
-
       color: var(--navy);
-
       font-weight: 800;
     }
 
@@ -549,36 +398,26 @@
       border-bottom: 0;
     }
 
-
-    /* ==================================================
+    /* ================================
        FEATURE CARDS
-    ================================================== */
+    ================================= */
 
     .cards {
       width: 100%;
-
       display: grid;
-
       grid-template-columns:
         repeat(3, minmax(0, 1fr));
-
       gap: 18px;
     }
 
     .card {
       min-width: 0;
-
       padding: 25px;
-
       background: #ffffff;
-
       border: 1px solid var(--border);
-
       border-radius: 14px;
-
       box-shadow:
         0 8px 25px rgba(15, 22, 48, 0.08);
-
       transition:
         transform 0.2s ease,
         box-shadow 0.2s ease;
@@ -586,7 +425,6 @@
 
     .card:hover {
       transform: translateY(-4px);
-
       box-shadow:
         0 14px 32px rgba(15, 22, 48, 0.13);
     }
@@ -594,76 +432,52 @@
     .card-icon {
       width: 48px;
       height: 48px;
-
       display: flex;
-
       align-items: center;
       justify-content: center;
-
       margin-bottom: 14px;
-
       border-radius: 12px;
-
-      background:
-        linear-gradient(
-          135deg,
-          var(--orange),
-          var(--orange-2)
-        );
-
+      background: linear-gradient(
+        135deg,
+        var(--orange),
+        var(--orange-2)
+      );
       color: #ffffff;
-
       font-size: 22px;
-
       font-weight: 900;
     }
 
     .card h3 {
       margin: 0 0 8px;
-
       color: var(--navy);
-
       font-size: 19px;
     }
 
     .card p {
       margin: 0;
-
       color: var(--muted);
-
       font-size: 15px;
     }
 
-
-    /* ==================================================
+    /* ================================
        STEPS
-    ================================================== */
+    ================================= */
 
     .steps {
       width: 100%;
-
       display: grid;
-
       gap: 14px;
     }
 
     .step {
       width: 100%;
-
       display: flex;
-
       align-items: flex-start;
-
       gap: 16px;
-
       padding: 20px;
-
       background: #ffffff;
-
       border: 1px solid var(--border);
-
       border-radius: 12px;
-
       box-shadow:
         0 5px 18px rgba(15, 22, 48, 0.06);
     }
@@ -671,128 +485,94 @@
     .step-number {
       width: 42px;
       height: 42px;
-
       min-width: 42px;
-
       display: flex;
-
       align-items: center;
       justify-content: center;
-
       border-radius: 50%;
-
       background: var(--navy);
-
       color: #ffffff;
-
       font-weight: 900;
     }
 
     .step h3 {
       margin: 0 0 5px;
-
       color: var(--navy);
-
       font-size: 18px;
     }
 
     .step p {
       margin: 0;
-
       color: #666666;
     }
 
-
-    /* ==================================================
+    /* ================================
        GAME GRID
-    ================================================== */
+    ================================= */
 
     .game-grid {
       width: 100%;
-
       display: grid;
-
       grid-template-columns:
         repeat(4, minmax(0, 1fr));
-
       gap: 16px;
     }
 
     .game-box {
       min-width: 0;
-
       min-height: 120px;
-
       display: flex;
-
       flex-direction: column;
-
       align-items: center;
-
       justify-content: center;
-
       text-align: center;
-
       padding: 18px;
-
       background: #ffffff;
-
       border: 1px solid var(--border);
-
       border-radius: 14px;
-
       box-shadow:
         0 7px 20px rgba(15, 22, 48, 0.07);
+      transition: transform 0.2s ease;
+    }
+
+    .game-box:hover {
+      transform: translateY(-3px);
     }
 
     .game-box strong {
       color: var(--navy);
-
       font-size: 20px;
     }
 
     .game-box span {
       color: #777777;
-
       font-size: 13px;
     }
 
-
-    /* ==================================================
+    /* ================================
        FAQ
-    ================================================== */
+    ================================= */
 
     .faq {
       width: 100%;
-
       display: grid;
-
       gap: 12px;
     }
 
     details {
       width: 100%;
-
       background: #ffffff;
-
       border: 1px solid var(--border);
-
       border-radius: 10px;
-
       overflow: hidden;
     }
 
     summary {
       position: relative;
-
       cursor: pointer;
-
       padding: 18px 48px 18px 20px;
-
       color: var(--navy);
-
       font-weight: 800;
-
       list-style: none;
     }
 
@@ -802,15 +582,10 @@
 
     summary::after {
       content: "+";
-
       position: absolute;
-
       right: 20px;
-
       top: 13px;
-
       color: var(--orange);
-
       font-size: 24px;
     }
 
@@ -820,55 +595,40 @@
 
     details p {
       margin: 0;
-
-      padding:
-        0 20px 20px;
-
+      padding: 0 20px 20px;
       color: #666666;
     }
 
-
-    /* ==================================================
+    /* ================================
        FOOTER
-    ================================================== */
+    ================================= */
 
     footer {
       margin-top: 65px;
-
       background: var(--navy);
-
       color: #ffffff;
     }
 
     .footer-inner {
       width: min(1060px, calc(100% - 32px));
-
       margin-left: auto;
       margin-right: auto;
-
       padding: 40px 0;
-
       text-align: center;
     }
 
     .footer-logo {
       width: 65px;
       height: 65px;
-
       margin: 0 auto 12px;
-
       object-fit: cover;
-
       border-radius: 14px;
-
       background: #ffffff;
     }
 
     .footer-brand {
       margin-bottom: 8px;
-
       font-size: 22px;
-
       font-weight: 800;
     }
 
@@ -878,23 +638,16 @@
 
     .footer-links {
       display: flex;
-
       justify-content: center;
-
       align-items: center;
-
       flex-wrap: wrap;
-
       gap: 18px;
-
       margin: 18px 0;
     }
 
     .footer-links a {
       color: #ffffff;
-
       text-decoration: none;
-
       font-size: 14px;
     }
 
@@ -904,16 +657,13 @@
 
     .footer-inner p {
       margin: 5px 0;
-
       color: #c7cad5;
-
       font-size: 14px;
     }
 
-
-    /* ==================================================
+    /* ================================
        TABLET
-    ================================================== */
+    ================================= */
 
     @media (max-width: 950px) {
 
@@ -934,31 +684,24 @@
         grid-template-columns:
           repeat(2, minmax(0, 1fr));
       }
-
     }
 
-
-    /* ==================================================
+    /* ================================
        MOBILE
-    ================================================== */
+    ================================= */
 
     @media (max-width: 700px) {
 
       .container,
       .section {
         width: calc(100% - 24px);
-
         margin-left: auto !important;
         margin-right: auto !important;
       }
 
       .header-inner {
         width: calc(100% - 24px);
-
         min-height: 66px;
-
-        margin-left: auto;
-        margin-right: auto;
       }
 
       .brand img {
@@ -981,7 +724,6 @@
 
       .hero h1 {
         font-size: 35px;
-
         letter-spacing: -1px;
       }
 
@@ -992,15 +734,12 @@
       .hero-logo {
         width: 150px;
         height: 150px;
-
         margin-top: 25px;
-
         border-radius: 25px;
       }
 
       .buttons {
         flex-direction: column;
-
         gap: 12px;
       }
 
@@ -1019,7 +758,6 @@
 
       .section-title {
         font-size: 21px;
-
         padding: 14px 16px;
       }
 
@@ -1030,26 +768,22 @@
       .game-grid {
         grid-template-columns:
           repeat(2, minmax(0, 1fr));
-
         gap: 10px;
       }
 
       .game-box {
         min-height: 105px;
-
         padding: 12px;
       }
 
       .game-box strong {
         font-size: 17px;
       }
-
     }
 
-
-    /* ==================================================
+    /* ================================
        SMALL PHONE
-    ================================================== */
+    ================================= */
 
     @media (max-width: 430px) {
 
@@ -1077,31 +811,26 @@
 
       .step {
         padding: 16px;
-
         gap: 12px;
       }
 
       .step-number {
         width: 38px;
         height: 38px;
-
         min-width: 38px;
       }
 
       .info-table {
         min-width: 560px;
       }
-
     }
 
-
-    /* ==================================================
+    /* ================================
        ACCESSIBILITY
-    ================================================== */
+    ================================= */
 
     :focus-visible {
       outline: 3px solid #ff9a3c;
-
       outline-offset: 3px;
     }
 
@@ -1116,33 +845,29 @@
       *::after {
         transition: none !important;
       }
-
     }
 
   </style>
 
-
-  <!-- Structured Data -->
+  <!-- STRUCTURED DATA -->
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "Maan Win Game",
+    "name": "Maan Gaming Hub",
     "url": "https://maanwin.game/",
-    "description": "Maan Win Game portal "
+    "description": "Maan Gaming Hub - online gaming information portal"
   }
   </script>
 
 </head>
 
-
 <body>
 
-
-  <!-- ==================================================
+  <!-- ================================
        HEADER
-  ================================================== -->
+  ================================= -->
 
   <header class="site-header">
 
@@ -1151,14 +876,14 @@
       <a
         href="/"
         class="brand"
-        aria-label="Maan Win Game Home"
+        aria-label="Maan Gaming Hub Home"
       >
 
         <img
           src="maan-win-logo.png"
           width="48"
           height="48"
-          alt="Maan Win logo"
+          alt="Maan Gaming Hub logo"
         >
 
         <div class="brand-text">
@@ -1167,22 +892,16 @@
 
       </a>
 
-
       <nav
         class="nav"
         aria-label="Main Navigation"
       >
 
         <a href="#home">Home</a>
-
         <a href="#features">Features</a>
-
-        <a href="#steps">Steps</a>
-
+        <a href="#steps">Guides</a>
         <a href="#games">Games</a>
-
         <a href="#faq">FAQ</a>
-
         <a href="#contact">Contact</a>
 
       </nav>
@@ -1192,61 +911,52 @@
   </header>
 
 
-
-  <!-- ==================================================
+  <!-- ================================
        MAIN
-  ================================================== -->
+  ================================= -->
 
   <main id="home">
 
 
-    <!-- ==================================================
-         HERO
-    ================================================== -->
+    <!-- HERO -->
 
     <section class="hero">
 
       <div class="container">
 
         <h1>
-          Maan Win Game
-          <span>Portal</span>
+          Maan Gaming
+          <span>Hub</span>
         </h1>
 
-
         <p class="hero-description">
-          Welcome to the Maan Win Game information portal.
-          Explore website features, account information,
-          game categories and frequently asked questions
-          in one place.
+          Welcome to Maan Gaming Hub.
+          Explore gaming information, popular game
+          categories, helpful guides and useful account
+          resources in one place.
         </p>
-
 
         <img
           class="hero-logo"
           src="maan-win-logo.png"
           width="180"
           height="180"
-          alt="Maan Win Game logo"
+          alt="Maan Gaming Hub logo"
           fetchpriority="high"
         >
 
-
         <div class="buttons">
 
-          <!-- Replace with your authorised login URL -->
           <a
             class="btn"
-            href="https://maanwin28.com/register?inviteCode=KZHQUVN&from=web"
+            href="/login"
           >
             LOGIN
           </a>
 
-
-          <!-- Replace with your authorised registration URL -->
           <a
             class="btn ghost"
-            href="https://maanwin28.com/register?inviteCode=KZHQUVN&from=web"
+            href="/register"
           >
             REGISTER
           </a>
@@ -1258,27 +968,23 @@
     </section>
 
 
-
-    <!-- ==================================================
-         INTRO
-    ================================================== -->
+    <!-- INTRO -->
 
     <section class="container">
 
       <div class="intro">
 
         <p>
-          Maan Win Game is presented here as an
-          easy-to-read online game portal.
-          This page brings together general information
-          about the portal, account access, game categories
-          and common questions.
+          Maan Gaming Hub is a simple and easy-to-use
+          online gaming information portal designed
+          for visitors who want to explore different
+          types of games and gaming resources.
         </p>
 
-
         <p>
-          Visitors can use the sections below to find
-          relevant information without navigating through
+          Find useful information about game categories,
+          website features, account access and frequently
+          asked questions without navigating through
           multiple pages.
         </p>
 
@@ -1287,55 +993,47 @@
     </section>
 
 
-
-    <!-- ==================================================
-         MAAN WIN GAME
-    ================================================== -->
+    <!-- ABOUT -->
 
     <section class="section">
 
       <h2 class="section-title">
-        Maan Win Game
+        About Maan Gaming Hub
       </h2>
 
-
       <p>
-        The Maan Win Game portal is designed with a
-        simple interface so visitors can find account
-        information and explore different game categories.
+        Maan Gaming Hub provides an organized place
+        where visitors can discover different gaming
+        categories and learn more about available
+        features.
       </p>
 
-
       <p>
-        The responsive layout adapts to desktop,
-        tablet and mobile screen sizes.
+        The responsive interface is designed to work
+        smoothly across desktop computers, tablets
+        and mobile devices.
       </p>
-
 
       <div class="notice">
 
-        <strong>Note:</strong>
+        <strong>Tip:</strong>
 
-        Always review applicable terms, eligibility
-        requirements and local regulations before using
-        any online gaming service.
+        Always use your own account credentials and
+        review the applicable terms and requirements
+        before using any online service.
 
       </div>
 
     </section>
 
 
-
-    <!-- ==================================================
-         INFORMATION
-    ================================================== -->
+    <!-- INFORMATION -->
 
     <section class="section">
 
       <h2 class="section-title">
-        Maan Win Game Information
+        Maan Gaming Hub Information
       </h2>
-
 
       <div class="table-wrapper">
 
@@ -1344,80 +1042,33 @@
           <tbody>
 
             <tr>
-
-              <th>
-                Portal Name
-              </th>
-
-              <td>
-                Maan Win Game
-              </td>
-
+              <th>Portal Name</th>
+              <td>Maan Gaming Hub</td>
             </tr>
 
-
             <tr>
-
-              <th>
-                Website Type
-              </th>
-
-              <td>
-                Online Game Portal
-              </td>
-
+              <th>Website Type</th>
+              <td>Online Gaming Portal</td>
             </tr>
 
-
             <tr>
-
-              <th>
-                Interface
-              </th>
-
-              <td>
-                Responsive Web Interface
-              </td>
-
+              <th>Interface</th>
+              <td>Responsive Web Interface</td>
             </tr>
 
-
             <tr>
-
-              <th>
-                Account Access
-              </th>
-
-              <td>
-                Login and Registration
-              </td>
-
+              <th>Account Access</th>
+              <td>Login and Registration</td>
             </tr>
 
-
             <tr>
-
-              <th>
-                Game Categories
-              </th>
-
-              <td>
-                Multiple Online Game Categories
-              </td>
-
+              <th>Game Categories</th>
+              <td>Multiple Gaming Categories</td>
             </tr>
 
-
             <tr>
-
-              <th>
-                Supported Devices
-              </th>
-
-              <td>
-                Desktop, Tablet and Mobile
-              </td>
-
+              <th>Supported Devices</th>
+              <td>Desktop, Tablet and Mobile</td>
             </tr>
 
           </tbody>
@@ -1429,10 +1080,7 @@
     </section>
 
 
-
-    <!-- ==================================================
-         FEATURES
-    ================================================== -->
+    <!-- FEATURES -->
 
     <section
       class="section"
@@ -1443,9 +1091,7 @@
         Key Features
       </h2>
 
-
       <div class="cards">
-
 
         <article class="card">
 
@@ -1458,8 +1104,9 @@
           </h3>
 
           <p>
-            A clean layout helps visitors find
-            important sections and information quickly.
+            A clean layout helps visitors quickly
+            find important sections and gaming
+            information.
           </p>
 
         </article>
@@ -1476,8 +1123,8 @@
           </h3>
 
           <p>
-            The page uses lightweight HTML and CSS
-            without heavy external frameworks.
+            Lightweight HTML and CSS provide a
+            straightforward browsing experience.
           </p>
 
         </article>
@@ -1494,8 +1141,8 @@
           </h3>
 
           <p>
-            Responsive styling keeps the website
-            usable on smaller screens.
+            Responsive styling keeps the portal
+            comfortable to use on smaller screens.
           </p>
 
         </article>
@@ -1512,8 +1159,8 @@
           </h3>
 
           <p>
-            Account-related information is organized
-            in a simple step-by-step format.
+            Account-related resources are presented
+            in a simple and easy-to-follow format.
           </p>
 
         </article>
@@ -1530,8 +1177,8 @@
           </h3>
 
           <p>
-            Different game categories are listed
-            in a dedicated section.
+            Different types of games are organized
+            into dedicated categories.
           </p>
 
         </article>
@@ -1544,7 +1191,7 @@
           </div>
 
           <h3>
-            FAQ Section
+            Helpful FAQ
           </h3>
 
           <p>
@@ -1554,16 +1201,12 @@
 
         </article>
 
-
       </div>
 
     </section>
 
 
-
-    <!-- ==================================================
-         STEPS
-    ================================================== -->
+    <!-- GUIDES -->
 
     <section
       class="section"
@@ -1571,12 +1214,10 @@
     >
 
       <h2 class="section-title">
-        How to Use the Maan Win Portal
+        How to Use the Gaming Hub
       </h2>
 
-
       <div class="steps">
-
 
         <div class="step">
 
@@ -1591,8 +1232,8 @@
             </h3>
 
             <p>
-              Visit the authorised website and
-              review the available sections.
+              Visit the website and explore the
+              available sections and resources.
             </p>
 
           </div>
@@ -1609,12 +1250,12 @@
           <div>
 
             <h3>
-              Review the Information
+              Explore Information
             </h3>
 
             <p>
-              Read the available account, game
-              and website information.
+              Browse the game categories, features
+              and useful guides.
             </p>
 
           </div>
@@ -1631,12 +1272,12 @@
           <div>
 
             <h3>
-              Login
+              Access Your Account
             </h3>
 
             <p>
-              Existing users can use the Login
-              option on the authorised account page.
+              Existing users can select the Login
+              option to access their account.
             </p>
 
           </div>
@@ -1653,45 +1294,38 @@
           <div>
 
             <h3>
-              Registration
+              Create an Account
             </h3>
 
             <p>
-              New users can use the authorised
-              registration page.
+              New users can select Register and
+              follow the instructions provided.
             </p>
 
           </div>
 
         </div>
 
-
       </div>
 
     </section>
 
 
-
-    <!-- ==================================================
-         LOGIN
-    ================================================== -->
+    <!-- LOGIN -->
 
     <section class="section">
 
       <h2 class="section-title">
-        Maan Win Login - How to Sign In
+        Maan Gaming Login
       </h2>
-
 
       <p>
         Existing users can use the Login option
-        provided on the authorised account page.
-        Follow the instructions shown by the service.
+        to access their account and continue using
+        the available gaming resources.
       </p>
 
-
       <div class="steps">
-
 
         <div class="step">
 
@@ -1706,7 +1340,8 @@
             </h3>
 
             <p>
-              Click the Login button from the website.
+              Click the Login button from the
+              website.
             </p>
 
           </div>
@@ -1728,7 +1363,7 @@
 
             <p>
               Enter your own account information
-              on the secure authorised page.
+              on the appropriate secure page.
             </p>
 
           </div>
@@ -1750,51 +1385,41 @@
 
             <p>
               Follow the instructions displayed
-              by the authorised service.
+              on the account page.
             </p>
 
           </div>
 
         </div>
 
-
       </div>
 
     </section>
 
 
-
-    <!-- ==================================================
-         REGISTRATION
-    ================================================== -->
+    <!-- REGISTRATION -->
 
     <section class="section">
 
       <h2 class="section-title">
-        Maan Win Registration
+        Maan Gaming Registration
       </h2>
 
-
       <p>
-        New visitors should use the authorised
-        registration page associated with the service.
-        Review the applicable terms and eligibility
-        requirements before creating an account.
+        New visitors can use the registration option
+        to create an account and access available
+        gaming resources.
       </p>
 
-
       <p>
-        Keep your passwords, verification codes and
+        Keep your password, verification codes and
         other account credentials private.
       </p>
 
     </section>
 
 
-
-    <!-- ==================================================
-         GAMES
-    ================================================== -->
+    <!-- GAMES -->
 
     <section
       class="section"
@@ -1805,20 +1430,17 @@
         Game Categories
       </h2>
 
-
       <p>
-        The following labels represent example game
-        categories that can be presented in the portal.
+        Explore different types of games and discover
+        categories that match your interests.
       </p>
-
 
       <div class="game-grid">
 
-
         <div class="game-box">
 
           <strong>
-            Wingo
+            Arcade
           </strong>
 
           <span>
@@ -1831,7 +1453,7 @@
         <div class="game-box">
 
           <strong>
-            K3
+            Puzzle
           </strong>
 
           <span>
@@ -1844,7 +1466,7 @@
         <div class="game-box">
 
           <strong>
-            5D
+            Strategy
           </strong>
 
           <span>
@@ -1857,7 +1479,7 @@
         <div class="game-box">
 
           <strong>
-            Aviator
+            Action
           </strong>
 
           <span>
@@ -1866,16 +1488,64 @@
 
         </div>
 
+
+        <div class="game-box">
+
+          <strong>
+            Adventure
+          </strong>
+
+          <span>
+            Game Category
+          </span>
+
+        </div>
+
+
+        <div class="game-box">
+
+          <strong>
+            Sports
+          </strong>
+
+          <span>
+            Game Category
+          </span>
+
+        </div>
+
+
+        <div class="game-box">
+
+          <strong>
+            Casual
+          </strong>
+
+          <span>
+            Game Category
+          </span>
+
+        </div>
+
+
+        <div class="game-box">
+
+          <strong>
+            Multiplayer
+          </strong>
+
+          <span>
+            Game Category
+          </span>
+
+        </div>
 
       </div>
 
     </section>
 
 
-
-    <!-- ==================================================
-         FAQ
-    ================================================== -->
+    <!-- FAQ -->
 
     <section
       class="section"
@@ -1886,21 +1556,19 @@
         Frequently Asked Questions
       </h2>
 
-
       <div class="faq">
 
 
         <details>
 
           <summary>
-            What is Maan Win Game?
+            What is Maan Gaming Hub?
           </summary>
 
           <p>
-            Maan Win Game is presented on this page
-            as an online game portal. This page
-            provides general information about its
-            interface and categories.
+            Maan Gaming Hub is an online gaming
+            information portal featuring game
+            categories, guides and account resources.
           </p>
 
         </details>
@@ -1913,9 +1581,9 @@
           </summary>
 
           <p>
-            Existing users can use the Login option
-            and follow the instructions on the
-            authorised account page.
+            Existing users can select the Login
+            option and follow the instructions
+            displayed on the account page.
           </p>
 
         </details>
@@ -1928,9 +1596,9 @@
           </summary>
 
           <p>
-            New users should use the authorised
-            registration page and review all applicable
-            terms before registering.
+            New users can select the Register
+            option and follow the registration
+            instructions.
           </p>
 
         </details>
@@ -1943,8 +1611,9 @@
           </summary>
 
           <p>
-            Yes. The page uses responsive HTML and CSS
-            for desktop, tablet and mobile screens.
+            Yes. The website uses responsive HTML
+            and CSS so it can adapt to desktop,
+            tablet and mobile screens.
           </p>
 
         </details>
@@ -1953,12 +1622,13 @@
         <details>
 
           <summary>
-            What game categories are shown?
+            What game categories are available?
           </summary>
 
           <p>
-            The list includes Wingo, K3, 5D and
-            Aviator as example category labels.
+            The portal presents categories such as
+            Arcade, Puzzle, Strategy, Action,
+            Adventure, Sports and Casual games.
           </p>
 
         </details>
@@ -1971,23 +1641,19 @@
           </summary>
 
           <p>
-            Keep your password and verification codes
-            private and only enter sensitive information
-            on an authorised secure page.
+            Keep your password and verification
+            codes private and only enter sensitive
+            information on the appropriate secure page.
           </p>
 
         </details>
-
 
       </div>
 
     </section>
 
 
-
-    <!-- ==================================================
-         CONTACT
-    ================================================== -->
+    <!-- CONTACT -->
 
     <section
       class="section"
@@ -1998,51 +1664,46 @@
         Contact
       </h2>
 
-
       <div class="intro">
 
         <p>
-          For questions about this website, use the
-          contact information provided by the site owner.
+          For questions about this website,
+          please use the contact information
+          provided by the site owner.
         </p>
 
         <p>
-          Replace this text with your actual support
-          email address or contact page.
+          Replace this section with your actual
+          support email address or contact page.
         </p>
 
       </div>
 
     </section>
 
-
   </main>
 
 
-
-  <!-- ==================================================
+  <!-- ================================
        FOOTER
-  ================================================== -->
+  ================================= -->
 
   <footer>
 
     <div class="footer-inner">
-
 
       <img
         class="footer-logo"
         src="maan-win-logo.png"
         width="65"
         height="65"
-        alt="Maan Win logo"
+        alt="Maan Gaming Hub logo"
         loading="lazy"
       >
-
 
       <div class="footer-brand">
         maan<span>.win</span>
       </div>
-
 
       <div class="footer-links">
 
@@ -2055,7 +1716,7 @@
         </a>
 
         <a href="#steps">
-          Steps
+          Guides
         </a>
 
         <a href="#games">
@@ -2072,22 +1733,18 @@
 
       </div>
 
-
       <p>
-        © 2026 Maan Win Game. All rights reserved.
+        © 2026 Maan Gaming Hub. All rights reserved.
       </p>
-
 
       <p>
         Information on this page is provided for
         general informational purposes.
       </p>
 
-
     </div>
 
   </footer>
-
 
 </body>
 </html>
